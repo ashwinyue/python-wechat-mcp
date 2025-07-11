@@ -1,0 +1,30 @@
+{
+  "mcpServers": {
+    "write": {
+      "command": "python3",
+      "args": ["write_server.py"]
+    },
+    "greeter": {
+      "command": "python3",
+      "args": ["greeter_server.py"]
+    },
+    "math": {
+      "command": "python3",
+      "args": ["math_server.py"]
+    },
+    "weather": {
+      "command": "python3",
+      "args": ["weather_server.py"]
+    },
+    "weixin": {
+      "command": "venv/bin/python",
+      "args": ["weixin_server.py"],
+      "env": {
+        "ARTICLES_DIR": "articles",
+        "DOWNLOAD_IMAGES": "true",
+        "HEADLESS": "true",
+        "WAIT_TIME": "10"
+      }
+    }
+  }
+}
